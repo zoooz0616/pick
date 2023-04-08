@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#ffffff"
+    >
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/mt_bd"
+            android:textColor="#000000"
+            android:text="My"
+            android:textSize="20dp" />
+        <!--나중에 추가로 아이콘 넣으면 좋을 거 같음-->
+        <!--https://m.blog.naver.com/PostView.nhn?blogId=n_jihyeon&logNo=221196820428&proxyReferer=https:%2F%2Fwww.google.com%2F-->
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/user_img"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/user"/>
+
+        <TextView
+            android:layout_toRightOf="@id/user_img"
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:fontFamily="@font/ns_b"
+            android:textSize="15dp"/>
+
+
+        <LinearLayout
+            android:layout_below="@id/email"
+            android:layout_toRightOf="@id/user_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="0"
+                    android:id="@+id/post_cnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/mt_bd"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/post_cnt"
+                    android:layout_alignLeft="@id/post_cnt"
+                    android:id="@+id/post_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Posts"
+                    android:textColor="#797979"
+                    android:fontFamily="@font/ns_b"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginLeft="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/save_cnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/mt_bd"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/save_cnt"
+                    android:layout_alignLeft="@id/save_cnt"
+                    android:id="@+id/save_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scrap"
+                    android:textColor="#797979"
+                    android:fontFamily="@font/ns_b"
+                    android:textSize="15dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#828282"
+        android:layout_marginBottom="1dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

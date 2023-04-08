@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOTICE"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:fontFamily="@font/nts_b"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/heart"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/heart_2"/>
+
+                <TextView
+                    android:id="@+id/text_heart"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A님 외 9명이 내 게시물을 마음에 들어합니다."
+                    android:layout_toRightOf="@id/heart"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/nts_b"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/heart"
+                    android:text="나 이 둘중에 뭐 고를까?? \n 너무 고민됨."
+                    android:layout_alignLeft="@id/text_heart"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/save"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/save_3"/>
+
+                <TextView
+                    android:id="@+id/text_save"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A님 외 5명이 내 게시물을 저장하였습니다."
+                    android:layout_toRightOf="@id/save"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/nts_b"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/save"
+                    android:text="나 이 둘중에 뭐 고를까?? \n 너무 고민됨."
+                    android:layout_alignLeft="@id/text_save"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/comment_img"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/comment"/>
+
+                <TextView
+                    android:id="@+id/text_comment"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B님이 내 게시물에 댓글을 남겼습니다."
+                    android:layout_toRightOf="@id/comment_img"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/nts_b"
+                    />
+
+                <TextView
+                    android:id="@+id/comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/comment_img"
+                    android:text=": 닥 1임."
+                    android:layout_alignLeft="@id/text_comment"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/comment"
+                    android:text="나 이 둘중에 뭐 고를까?? \n 너무 고민됨."
+                    android:layout_alignLeft="@id/text_comment"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

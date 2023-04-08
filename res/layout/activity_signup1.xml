@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/login_ctn"
+        >
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:fontFamily="@font/ns_eb"
+            android:textSize="15sp"
+            />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/email"
+            android:layout_marginBottom="10dp"
+            android:inputType="textEmailAddress"/>
+
+        <TextView
+            android:id="@+id/pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:fontFamily="@font/ns_eb"
+            android:textSize="15sp"
+            android:layout_below="@id/editEmail"
+            />
+
+        <EditText
+            android:id="@+id/editPwd"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/pwd"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/continue_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="다음 단계로"
+            android:textSize="16sp"
+            android:padding="20dp"
+            android:background="@drawable/gradation"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:fontFamily="@font/ns_eb"
+            android:layout_below="@id/editPwd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35dp"
+        android:layout_above="@id/login_ctn"
+        android:layout_marginBottom="40dp"
+        >
+        <TextView
+            android:id="@+id/signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원 가입"
+            android:textColor="#000000"
+            android:fontFamily="@font/nts_b"
+            android:textSize="30sp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

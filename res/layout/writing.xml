@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/writing"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+    <!-- 이 파일 대신 Writing 파일에서 하단 버튼 택스트만 수정완료로 바꾸면 됨.. -->
+    <ScrollView
+        android:layout_above="@id/continue_btn"
+        android:scrollbars="none"
+        android:orientation = "vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/genderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            >
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="질문을 입력하세요."
+                android:fontFamily="@font/ns_eb"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/photo1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edge"
+                        android:layout_marginRight="10dp"
+                        />
+                    <ImageView
+                        android:id="@+id/photo2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edge"
+                        />
+                </LinearLayout>
+                <ImageButton
+                    android:id="@+id/btn"
+                    android:layout_width="40dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="right|bottom"
+                    android:background="@drawable/camera"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="항목1"
+                android:textColor="#000000"
+                android:fontFamily="@font/ns_b"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <EditText
+                android:id="@+id/option1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="첫 번째 항목을 입력하세요."
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/ns_r"
+                android:layout_marginBottom="20dp"
+                />
+
+            <TextView
+                android:id="@+id/item2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="항목2"
+                android:textColor="#000000"
+                android:fontFamily="@font/ns_b"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <EditText
+                android:id="@+id/option2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="두 번째 항목을 입력하세요."
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/ns_r"
+                android:layout_marginBottom="20dp"
+                />
+
+            <TextView
+                android:id="@+id/textCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="카테고리"
+                android:textColor="#000000"
+                android:fontFamily="@font/ns_b"
+                android:textSize="16sp"
+                android:layout_marginBottom="13dp"
+                />
+
+            <HorizontalScrollView
+                android:scrollbars="none"
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:onClick="onClick"
+                        android:id="@+id/fashion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="패션 / 뷰티"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:textSize="15sp"
+                        android:background="#00ff0000"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/ns_b"
+                        />
+
+                    <Button
+                        android:onClick="onClick"
+                        android:id="@+id/interior"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="인테리어"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:textSize="15sp"
+                        android:background="#00ff0000"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/ns_b"
+                        android:layout_marginRight="10dp"
+                        />
+
+                    <Button
+                        android:onClick="onClick"
+                        android:id="@+id/media"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="엔터테인먼트"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:textSize="15sp"
+                        android:background="#00ff0000"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/ns_b"
+                        android:layout_marginRight="10dp"
+                        />
+
+                    <Button
+                        android:onClick="onClick"
+                        android:id="@+id/daily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:fontFamily="@font/ns_b"
+                        android:background="#00ff0000"
+                        android:text="일상 / 심리"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:onClick="onClick"
+                        android:id="@+id/food"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="음식"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:textSize="15sp"
+                        android:background="#00ff0000"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/ns_b"
+                        android:layout_marginRight="10dp"
+                        />
+
+                    <Button
+                        android:onClick="onClick"
+                        android:id="@+id/animal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="반려동물"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:textSize="15sp"
+                        android:background="#00ff0000"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/ns_b"
+                        android:layout_marginRight="10dp"
+                        />
+
+                    <Button
+                        android:onClick="onClick"
+                        android:id="@+id/book"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="교육 / 도서"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:textSize="15sp"
+                        android:background="#00ff0000"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/ns_b"
+                        android:layout_marginRight="10dp"
+                        />
+
+                    <Button
+                        android:onClick="onClick"
+                        android:id="@+id/digital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="디지털 / 가전 / 자동차"
+                        android:textSize="15sp"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:background="#00ff0000"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/ns_b"
+                        android:layout_marginRight="10dp"
+                        />
+
+                    <Button
+                        android:onClick="onClick"
+                        android:id="@+id/economy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="경제"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:textSize="15sp"
+                        android:background="#00ff0000"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/ns_b"
+                        android:layout_marginRight="10dp"
+                        />
+
+                    <Button
+                        android:onClick="onClick"
+                        android:id="@+id/travel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="여행"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:textSize="15sp"
+                        android:background="#00ff0000"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/ns_b"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="100dp"
+                        />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/continue_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="등록"
+        android:textSize="16sp"
+        android:padding="20dp"
+        android:background="@drawable/gradation"
+        android:textColor="#000000"
+        android:textAllCaps="false"
+        android:fontFamily="@font/ns_eb"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/home"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginVertical="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/mt_bd"
+            android:textColor="#000000"
+            android:text="pick"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_baseline_search_24" />
+
+        <!--https://m.blog.naver.com/PostView.nhn?blogId=n_jihyeon&logNo=221196820428&proxyReferer=https:%2F%2Fwww.google.com%2F-->
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_marginBottom="10dp"
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="13dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/recommendation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="#00ff0000"
+                android:fontFamily="@font/ns_b"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="추천"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/popularity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="#00ff0000"
+                android:fontFamily="@font/ns_b"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="인기글"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/fashion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="#00ff0000"
+                android:fontFamily="@font/ns_b"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="패션 / 뷰티"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/interior"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="#00ff0000"
+                android:fontFamily="@font/ns_b"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="인테리어"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/media"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="#00ff0000"
+                android:fontFamily="@font/ns_b"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="엔터테인먼트"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/daily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="#00ff0000"
+                android:fontFamily="@font/ns_b"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="일상 / 심리"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="#00ff0000"
+                android:fontFamily="@font/ns_b"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="음식"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/animal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="#00ff0000"
+                android:fontFamily="@font/ns_b"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="반려동물"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="#00ff0000"
+                android:fontFamily="@font/ns_b"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="교육 / 도서"
+                android:textSize="13sp" />
+
+            <Button
+            android:id="@+id/digital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="#00ff0000"
+            android:fontFamily="@font/ns_b"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="디지털 / 가전 / 자동차"
+            android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/economy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="#00ff0000"
+                android:fontFamily="@font/ns_b"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="경제"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/travel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="#00ff0000"
+                android:fontFamily="@font/ns_b"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="여행"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+<!--    <View-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0.5dp"-->
+<!--        android:background="#FF000000"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

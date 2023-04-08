@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="10dp"
+        >
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로고"
+            android:fontFamily="@font/ns_eb"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_baseline_search_24" />
+        <!--https://m.blog.naver.com/PostView.nhn?blogId=n_jihyeon&logNo=221196820428&proxyReferer=https:%2F%2Fwww.google.com%2F-->
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="13dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/best"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인기글"
+                android:background="#00ff0000"
+                android:layout_marginRight="10dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:textColor="#7366ff"
+                android:fontFamily="@font/ns_b"
+                android:textSize="13sp"
+                />
+
+            <Button
+                android:id="@+id/fashion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="패션 / 뷰티"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:background="#00ff0000"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/ns_b"
+                android:textSize="13sp"
+                />
+
+            <Button
+                android:id="@+id/interior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인테리어"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:background="#00ff0000"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/ns_b"
+                android:textSize="13sp"
+                />
+
+            <Button
+                android:id="@+id/media"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="미디어"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:background="#00ff0000"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/ns_b"
+                android:textSize="13sp"
+                />
+
+            <Button
+                android:id="@+id/daily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ff0000"
+                android:layout_marginRight="10dp"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="일상 / 심리"
+                android:fontFamily="@font/ns_b"
+                android:textSize="13sp"/>
+
+            <Button
+                android:id="@+id/food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="음식"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:background="#00ff0000"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/ns_b"
+                android:textSize="13sp"
+                />
+
+            <Button
+                android:id="@+id/animal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="반려동물"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:background="#00ff0000"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/ns_b"
+                android:textSize="13sp"
+                />
+
+            <Button
+                android:id="@+id/book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="교육 / 도서"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:background="#00ff0000"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/ns_b"
+                android:textSize="13sp"
+                />
+
+            <Button
+                android:id="@+id/digital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="디지털 / 가전 / 자동차"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:background="#00ff0000"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/ns_b"
+                android:textSize="13sp"
+                />
+
+            <Button
+                android:id="@+id/economy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="경제"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:background="#00ff0000"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/ns_b"
+                android:textSize="13sp"
+                />
+
+            <Button
+                android:id="@+id/travel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여행"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:background="#00ff0000"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/ns_b"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/profile_img"/>
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="USER NAME"
+                        android:textSize="10dp"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_weight="10"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/option"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/ns_b"
+                        android:text=" 나 이 둘중에 뭐 고를까?? \n 너무 고민됨."/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ex_1"
+                            android:layout_weight="10"/>
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ex_2"
+                            android:layout_weight="10"/>
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <ImageButton
+                        android:id="@+id/btn1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/heart_btn"
+                        android:background="#ffffff"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"/>
+
+                    <ImageButton
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/comment"
+                        android:background="#ffffff"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"/>
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20"/>
+                    <ImageButton
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/save_1"
+                        android:background="#ffffff"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
